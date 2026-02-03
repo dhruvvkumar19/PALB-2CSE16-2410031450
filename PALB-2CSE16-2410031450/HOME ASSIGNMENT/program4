@@ -1,0 +1,17 @@
+def find_union(arr1, arr2):
+    return sorted(list(set(arr1) | set(arr2)))
+
+
+a = [5, 8, 5, 9, 5]
+b = [8, 7, 7, 8, 9]
+
+print("Array a:", a)
+print("Array b:", b)
+
+union_result = find_union(a, b)
+
+
+print("\nExplanation:")
+print("Unique elements in a:", set(a))
+print("Unique elements in b:", set(b))
+print("Union (all unique elements combined):", union_result)
